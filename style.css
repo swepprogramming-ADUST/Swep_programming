@@ -1,0 +1,228 @@
+:root{
+    --myFont:"Science Gothic", sans-serif;
+    --MylinearColor:linear-gradient( rgb(6, 212, 240), #0307f1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(images/Body-background.jpeg);
+    background-color: #0400ffb7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode:multiply;
+}
+/* header style */
+header{
+    width: 100%;
+    height: 35vh; 
+    background:var(--MylinearColor);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li{
+    display: inline-block;
+}
+.logo{
+    width: 20%;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900; 
+    font-variant: small-caps;
+    color: rgba(255, 251, 0, 0.719);
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    z-index: 1;
+}
+nav{
+    width: 80%;
+}
+nav, .logo{
+    display: inline-block;
+}
+ 
+.parent-tilt{
+    position: absolute;
+    width: 300px;
+    height: 40px; 
+    top: 0;
+    left: -220px;
+    overflow: hidden; 
+}
+.tilt{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background:linear-gradient(to top, orangered,orange);
+    top: -80px;
+    left: 0;
+    transform: rotate(45deg); 
+}
+ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    margin: 0 10%;
+    font-size: 20px; 
+    font-weight: 700;
+}
+nav ul li a{
+   text-decoration: none;
+   color: #fff;
+   cursor: pointer;
+}
+nav ul li a:hover{
+    color:rgba(255, 251, 0, 0.719);
+}
+.header-text{
+    width: 600px;
+    padding: 30px; 
+    margin: auto ;
+}
+.header-text h1, .header-text h3{
+     font-family: var(--myFont);
+    font-variant: small-caps;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 1px 1px 3px black;
+}
+.header-text h1{
+    text-align: center;
+    font-size: 5rem; 
+    margin-bottom: 0;
+}
+.header-text h3{
+    text-align: end;
+    position: relative; 
+    font-size: 50px;
+    letter-spacing: 3px;
+    line-height: 0;
+}
+
+/* main style */
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.home-info{
+    width: 100%;
+    height: 50vh;
+    background: #fff;
+    display: inline-block;
+    padding: 30px;
+}
+
+.image-container{
+    width: 200px;
+    display: inline-block;
+    padding: 5px;
+}
+.text1{
+    width: 65%; 
+    float: right;
+}
+.image-container img{
+    width: 200px;
+    border: 5px groove gold;
+    border-radius: 20px;
+}
+.image-container p{
+    font-size: 10px; 
+    text-align: center;
+    color: brown;
+    text-transform: capitalize;
+}
+.text1 p{
+    padding: 10px 40px;
+    text-align: justify; 
+    word-spacing: 5px;
+}
+.department{
+    width: 100%;
+    padding: 50px;
+}
+.department h2{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.card{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 30px;
+}
+.card img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.card-title{
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0;
+    color: #2a63a5;
+    font-variant: small-caps;
+}
+.card-p{
+    padding: 5px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.card button{
+    margin: 10px 30px;
+    border: 3px inset aqua;
+    background-color: aqua;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 5px gray;
+    cursor: pointer;
+}
+.card button:hover{
+    border-style: outset;
+    color: #0307f1;
+    transition: 1s;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .image-container{
+        width: 100%;
+    }
+    .image-container img{
+        width: 100%;
+    }
+    .text1{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+    .card-p{
+        margin: 20px;
+    }
+    .card-title{
+        font-size: 20px;
+    }
+}
+ 
+@media screen and (min-width: 500px) {
+ 
+    .text1{
+        width: calc(100%-200px);
+    }
+}
