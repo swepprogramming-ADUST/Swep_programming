@@ -115,8 +115,7 @@ main{
 }
 
 .home-info{
-    width: 100%;
-    height: 50vh;
+    width: 100%; 
     background: #fff;
     display: inline-block;
     padding: 30px;
@@ -126,23 +125,24 @@ main{
     width: 200px;
     display: inline-block;
     padding: 5px;
+    float: left;
+    margin-right: 20px;
 }
 .text1{
-    width: 65%; 
-    float: right;
+    width: 100%;  
 }
 .image-container img{
-    width: 200px;
+    width:100%;
     border: 5px groove gold;
     border-radius: 20px;
 }
 .image-container p{
     font-size: 10px; 
-    text-align: center;
+    text-align: justify;
     color: brown;
     text-transform: capitalize;
 }
-.text1 p{
+#container-p{
     padding: 10px 40px;
     text-align: justify; 
     word-spacing: 5px;
@@ -161,7 +161,7 @@ main{
     border-radius: 20px;
     overflow: hidden;
     display: inline-block;
-    margin: 30px;
+    margin: 5px;
 }
 .card img{
     width: 100%;
@@ -225,4 +225,33 @@ main{
     .text1{
         width: calc(100%-200px);
     }
+} 
+
+/* footer */
+footer{
+    width: 100%; 
+}
+.footer{
+    display: inline-block;
+    width: 50%;
+    float: left;
+    background-color: #0000ff;
+    height: 230px;
+    padding: 20px;
+}
+.footer table{
+    width: 100%;
+}
+td, th{
+    padding: 2px;
+    font-weight: 900;
+    font-family: var(--myFont);
+}
+td a{
+    text-decoration: none;
+    color: rgb(7, 33, 105);
+    cursor: pointer;
+}
+td a:hover{
+   text-shadow: 1px 1px 1px black;
 }
